@@ -1,0 +1,260 @@
+:root{
+    --text-color: #62646a;
+    --white-color: #fff;
+    --green-color:#1dbf73;
+    --slider-color: #0d084e;
+    --blue-color: #0d084d;
+    --light-blue-color: #4a73e8;
+
+    --header-height: 80px;
+    --slider-height: 680px;
+
+
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font: 400 16px/24px Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+.btn{
+    border: none;
+    outline: none;
+    background-color:#1dbf73;
+    height: var(--height-search);
+    border-radius: 3px;
+    right: 0;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 30px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.color-green{
+    color: var(--green-color) !important;
+}
+
+
+/* Modal Sign In */
+.modal__signIn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal__signIn.open,
+.modal__join.open,
+.modal__video.open{
+    display: flex;
+}
+
+.modal__container{
+    background-color: var(--white-color);
+    width: 400px;
+    min-height: 200px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0 36px;
+    position: relative;
+}
+
+.modal__header {
+    margin: 36px 0;
+    color: var(--text-color);
+    line-height: 2rem;
+}
+
+.modal__container-btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__btn{
+    border: none;
+    outline: none;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #e4e5e7;
+    margin-bottom: 16px;
+    background-color: var(--white-color);
+}
+
+.modal__fb:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal__gg:hover,
+.modal__apple:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.modal__fb{
+    background-color: #4764ba;
+    color: var(--white-color);
+    
+}
+
+.modal__icon{
+    font-size: 1.1rem;
+    padding-right: 10px;
+}
+
+.modal__seperato{
+    height: 11px;
+    margin: 6px 0 33px;
+    text-align: center;
+    border-bottom: 1px solid #e4e5e7;
+}
+
+.modal__seperato span{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 8px;
+    background-color: #fff;
+    color: #62646a;
+}    
+
+.modal__input{
+    width: 100%;
+    padding:12px 10px;
+    outline: none;
+    border: 1px solid #e4e5e7;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.modal__btn-continue{
+    width: 100%;
+    padding: 14px 10px;
+    margin-bottom: 10px;
+}
+
+.foggot-passwword{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.foggot-passwword-link,
+.modal__footer-link{
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.foggot-passwword-link:hover,
+.modal__footer-link:hover{
+    text-decoration: underline solid var(--green-color);
+}
+
+.modal__footer{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border-top: 1px solid #e4e5e7;
+}
+
+.modal__footer-body{
+    margin: 0;
+}
+
+
+/* Modal Join */
+
+.modal__join{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.foggot-passwword-join{
+    font-size: 0.9rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Modal video */
+
+.modal__video{
+    background-color: rgba(0,0,0,.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.modal__video-body{
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+.modal__video-body-orca-video{
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+.video.js-hidden{
+    display: none;
+}
+
+.menu-close{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.menu-close__icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr</title>
+    <!-- Reset css       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRwoC561YpHpc5Jtzgvbuzx5VozKpwvQ+4nXhPdFgmx8xqexRcpAglTj9sIBwINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/grid.css">
+    <link rel="stylesheet" href="./assest/css/main.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
+    <link rel="stylesheet" href="./assest/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">   <!--font chữ-->
+</head>
+<body>
+    <div class="app">
+        <!-- Header --> 
+        <div class="header">
+
+            <div class="header__logo">
+                <label for="nav-mobile-input" class="logo-menu hide-on-pc">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <img src="./assest/img/logo_header.png" alt="" class="header__logo-img">     
+            </div>
+
+            <input type="checkbox" hidden id="nav-mobile-input" class="nav-input"> 
+            
+            <!-- Navbar menu mobile Tablet -->
+            <label for="nav-mobile-input" class="menu__overlay"></label>
+
+            <nav class="nav-menu">
+                <button class="nav-menu__btn btn">Join Fiverr</button>
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link">Sign in</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link nav-menu__link-active">
+                            Browes Categories
+                            <i class="nav-menu__icon fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link nav-menu__link-active">
+                            Explore
+                            <i class="nav-menu__icon fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link color-green">Fiverr Pro</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link color-green">Fiverr Business</a>
+                    </li>
+                </ul>
+                <span class="nav-menu__general">General</span>
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link">Home</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link">
+                            Engilsh
+                            <i class="header__navbar-item-icon fas fa-globe"></i>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link nav-menu__link-active">
+                            US$ USD
+                            <i class="nav-menu__icon fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="" class="nav-menu__link">Open in App</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item hide-on-tablet-mobile">
+                        <a href="" class="header__navbar-link">Fiverr Business</a>
+                    </li>
+                    <li class="header__navbar-item hide-on-tablet-mobile">
+                        <a href="" class="header__navbar-link">Explore</a>
+                    </li>
+                    <li class="header__navbar-item hide-on-tablet-mobile">
+                        <a href="" class="header__navbar-link">
+                            <i class="header__navbar-item-icon fas fa-globe"></i>
+                            English
+                        </a>
+                    </li>
+                    <li class="header__navbar-item hide-on-tablet-mobile">
+                        <a href="" class="header__navbar-link">$ USD</a>
+                    </li>
+                    <li class="header__navbar-item hide-on-tablet-mobile">
+                        <a href="" class="header__navbar-link">Become a Seller</a>
+                    </li>
+                    <li class="header__navbar-item hide-on-mobile">
+                        <button class="header__navbar-link header__navbar-btn js-signIn">Sign In</button>
+                    </li>
+                    <li class="header__navbar-item">
+                        <button class="header__navbar-link header__navbar-btn js-join">Join</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slider__content grid wide">
+                <div class="row">
+                    <div class="slider__content-body col l-6">
+                        <h1 class="slider-heading">
+                            Find the perfect
+                            <span>freelance</span>
+                            services for your business
+                        </h1>
+                        <div class="slider__search">
+                            <i class="slider__search-icon fas fa-search"></i>
+                            <input type="text" class="slider__search-input" placeholder="Try building mobile app" >
+                            <button class="btn btn__search-pc hide-on-tablet-mobile">Search</button>
+                        </div>
+                        <div class="slider__search-btn hide-on-pc">
+                            <button class="btn btn__search">Search</button>
+                        </div>
+                        
+                        <div class="slider__popular hide-on-tablet-mobile">
+                            <p class="slider__popular-desc">Popular :</p>
+                            <ul class="slider__popular-list">
+                                <li class="slider__popular-item">
+                                    <a href="" class="slider__popular-link">
+                                        website Design
+                                    </a>
+                                </li>
+                                <li class="slider__popular-item">
+                                    <a href="" class="slider__popular-link">
+                                        wordPress
+                                    </a>
+                                </li>
+                                <li class="slider__popular-item">
+                                    <a href="" class="slider__popular-link">
+                                        Logo Design
+                                    </a>
+                                </li>
+                                <li class="slider__popular-item">
+                                    <a href="" class="slider__popular-link">
+                                        Dropshipping
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider__content-video col l-6 hide-on-tablet-mobile">
+                        <video  autoplay loop muted playsinline>
+                            <source type="video/mp4" src="./assest/img/cover-video.mp4">
+                        </video>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- Trusted by --> 
+        <div class="trusted-by hide-on-mobile">
+            <div class="trusted-by__content">
+                <span class="trusted-by__text hide-on-tablet-mobile">
+                    Trusted by:
+                </span>
+                <ul class="trusted-by__list">
+                    <li class="trusted-by__item">
+                        <img src="./assest/img/fb.png" alt="" class="trusted-by__img">
+                    </li>
+                    <li class="trusted-by__item">
+                        <img src="./assest/img/gg.png" alt="" class="trusted-by__img">
+                    </li>
+                    <li class="trusted-by__item">
+                        <img src="./assest/img/netflix.png" alt="" class="trusted-by__img">
+                    </li>
+                    <li class="trusted-by__item">
+                        <img src="./assest/img/p&g.png" alt="" class="trusted-by__img">
+                    </li>
+                    <li class="trusted-by__item hide-on-mobile">
+                        <img src="./assest/img/paypal.png" class="trusted-by__img">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recently Viewed & More -->
+        <div class="recently">
+            <div class="recently-content grid wide">
+                <div class="recently__header">
+                    <h1 class="recently__header-heading">Recently Viewed & More</h1>
+                </div>
+                <div class="recently__wrap row">
+                    <div class="recently__item col l-2-4 m-6 c-12">
+                        <div class="recently__item-img">
+                            <a href="" class="recently__item-img-link">
+                                <img src="./assest/img/recently_1.jfif" alt="">
+                            </a>
+                        </div>
+                        <div class="recently__item-body">
+                            <div class="recently__item-info">
+                                <img src="./assest/img/info1.jpg" alt="" class="recently__item-info-img">
+                                <div class="recently__item-info-name">
+                                    <span>mijalzagier</span>
+                                </div>
+                            </div>
+                            <div class="recently__item-desc">
+                                <p class="recently__item-text">I will design your next amazing product line and packaging</p>
+                            </div>
+                            <div class="recently__item-rating">
+                                <div class="recently__item-rating-left">
+                                    <i class="recently__item-rating-icon fas fa-star"></i>
+                                    <span class="recently__item-quantity">
+                                        5.0
+                                        <span>(70)</span>
+                                    </span>
+                                </div>
+                                <span class="recently__item-badge"></span>
+                            </div>
+                            <div class="recently__item-footer">
+                                <div class="recently__item-footer-collect">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="recently__item-footer-price-text">
+                                    <span class="recently__item-footer-text">STATING AT</span>
+                                    <span class="recently__item-footer-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recently__item col l-2-4 m-6 c-12">
+                        <div class="recently__item-img">
+                            <a href="" class="recently__item-img-link">
+                                <img src="./assest/img/recently_6.jfif" alt="">
+                            </a>
+                        </div>
+                        <div class="recently__item-body">
+                            <div class="recently__item-info">
+                                <img src="./assest/img/info2.png" alt="" class="recently__item-info-img">
+                                <div class="recently__item-info-name">
+                                    <span>mijalzagier</span>
+                                </div>
+                            </div>
+                            <div class="recently__item-desc">
+                                <p class="recently__item-text">I will design your next amazing product line and packaging</p>
+                            </div>
+                            <div class="recently__item-rating">
+                                <div class="recently__item-rating-left">
+                                    <i class="recently__item-rating-icon fas fa-star"></i>
+                                    <span class="recently__item-quantity">
+                                        5.0
+                                        <span>(70)</span>
+                                    </span>
+                                </div>
+                                <span class="recently__item-badge"></span>
+                            </div>
+                            <div class="recently__item-footer">
+                                <div class="recently__item-footer-collect">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="recently__item-footer-price-text">
+                                    <span class="recently__item-footer-text">STATING AT</span>
+                                    <span class="recently__item-footer-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recently__item col l-2-4 m-6 c-12">
+                        <div class="recently__item-img">
+                            <a href="" class="recently__item-img-link">
+                                <img src="./assest/img/recently_3.jfif" alt="">
+                            </a>
+                        </div>
+                        <div class="recently__item-body">
+                            <div class="recently__item-info">
+                                <img src="./assest/img/info3.png" alt="" class="recently__item-info-img">
+                                <div class="recently__item-info-name">
+                                    <span>mijalzagier</span>
+                                </div>
+                            </div>
+                            <div class="recently__item-desc">
+                                <p class="recently__item-text">I will design your next amazing product line and packaging</p>
+                            </div>
+                            <div class="recently__item-rating">
+                                <div class="recently__item-rating-left">
+                                    <i class="recently__item-rating-icon fas fa-star"></i>
+                                    <span class="recently__item-quantity">
+                                        5.0
+                                        <span>(70)</span>
+                                    </span>
+                                </div>
+                                <span class="recently__item-badge"></span>
+                            </div>
+                            <div class="recently__item-footer">
+                                <div class="recently__item-footer-collect">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="recently__item-footer-price-text">
+                                    <span class="recently__item-footer-text">STATING AT</span>
+                                    <span class="recently__item-footer-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recently__item col l-2-4 m-6 c-12">
+                        <div class="recently__item-img">
+                            <a href="" class="recently__item-img-link">
+                                <img src="./assest/img/recently_4.jfif" alt="">
+                            </a>
+                        </div>
+                        <div class="recently__item-body">
+                            <div class="recently__item-info">
+                                <img src="./assest/img/info4.png" alt="" class="recently__item-info-img">
+                                <div class="recently__item-info-name">
+                                    <span>mijalzagier</span>
+                                </div>
+                            </div>
+                            <div class="recently__item-desc">
+                                <p class="recently__item-text">I will design your next amazing ng product line and packaging ng product line and packaging</p>
+                            </div>
+                            <div class="recently__item-rating">
+                                <div class="recently__item-rating-left">
+                                    <i class="recently__item-rating-icon fas fa-star"></i>
+                                    <span class="recently__item-quantity">
+                                        5.0
+                                        <span>(70)</span>
+                                    </span>
+                                </div>
+                                <span class="recently__item-badge"></span>
+                            </div>
+                            <div class="recently__item-footer">
+                                <div class="recently__item-footer-collect">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="recently__item-footer-price-text">
+                                    <span class="recently__item-footer-text">STATING AT</span>
+                                    <span class="recently__item-footer-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recently__item col l-2-4 m-6 c-12">
+                        <div class="recently__item-img">
+                            <a href="" class="recently__item-img-link">
+                                <img src="./assest/img/recently_10.jfif" alt="">
+                            </a>
+                        </div>
+                        <div class="recently__item-body">
+                            <div class="recently__item-info">
+                                <img src="./assest/img/info7.jpg" alt="" class="recently__item-info-img">
+                                <div class="recently__item-info-name">
+                                    <span>mijalzagier</span>
+                                </div>
+                            </div>
+                            <div class="recently__item-desc">
+                                <p class="recently__item-text">I will design your next amazing product line and packaging</p>
+                            </div>
+                            <div class="recently__item-rating">
+                                <div class="recently__item-rating-left">
+                                    <i class="recently__item-rating-icon fas fa-star"></i>
+                                    <span class="recently__item-quantity">
+                                        5.0
+                                        <span>(70)</span>
+                                    </span>
+                                </div>
+                                <span class="recently__item-badge"></span>
+                            </div>
+                            <div class="recently__item-footer">
+                                <div class="recently__item-footer-collect">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="recently__item-footer-price-text">
+                                    <span class="recently__item-footer-text">STATING AT</span>
+                                    <span class="recently__item-footer-price">$950</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular professional services -->
+        <div class="popular grid wide">
+            <div class="popular__header">
+                <h1 class="popular__heading">Popular professional services</h1>
+            </div>
+            <div class="popular__wrap row ">
+                <div class="popular__wrap-item col l-2-4 m-6 c-12">
+                    <div class="popular__wrap-body">
+                        <span class="popular__wrap-body-heading">
+                            Build your brand
+                        </span>
+                        <h2 class="popular__wrap-body-desc">Logo Design</h2>
+                    </div>
+                    <div class="popular__wrap-img">
+                        <a href="" class="popular__wrap-img-link">
+                            <img src="./assest/img/popular_1.jfif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="popular__wrap-item col l-2-4 m-6 c-12">
+                    <div class="popular__wrap-body">
+                        <span class="popular__wrap-body-heading">
+                            Customize your site
+                        </span>
+                        <h2 class="popular__wrap-body-desc">wordPress</h2>
+                    </div>
+                    <div class="popular__wrap-img">
+                        <a href="" class="popular__wrap-img-link">
+                            <img src="./assest/img/popular_2.jfif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="popular__wrap-item col l-2-4 m-6 c-12">
+                    <div class="popular__wrap-body">
+                        <span class="popular__wrap-body-heading">
+                            Share your message
+                        </span>
+                        <h2 class="popular__wrap-body-desc">Voice Over</h2>
+                    </div>
+                    <div class="popular__wrap-img">
+                        <a href="" class="popular__wrap-img-link">
+                            <img src="./assest/img/popular_3.jfif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="popular__wrap-item col l-2-4 m-6 c-12">
+                    <div class="popular__wrap-body">
+                        <span class="popular__wrap-body-heading">
+                            Engage your audience
+                        </span>
+                        <h2 class="popular__wrap-body-desc">Video Explainer</h2>
+                    </div>
+                    <div class="popular__wrap-img">
+                        <a href="" class="popular__wrap-img-link">
+                            <img src="./assest/img/popular_4.jfif" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="popular__wrap-item col l-2-4 m-6 c-12">
+                    <div class="popular__wrap-body">
+                        <span class="popular__wrap-body-heading">
+                            Reach more customers
+                        </span>
+                        <h2 class="popular__wrap-body-desc">Social Media</h2>
+                    </div>
+                    <div class="popular__wrap-img">
+                        <a href="" class="popular__wrap-img-link">
+                            <img src="./assest/img/popular_5.jfif" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Selling proposition -->
+        <div class="selling">
+            <div class="selling__wrap grid wide">
+                <div class="row">
+                    <div class="selling__text col l-5 m-12 c-12">
+                        <h2 class="selling__text-heading">A whole world of freelance talent at your fingertips</h2>
+                        <ul class="selling__text-list">
+                            <li class="selling__text-item">
+                                <h5 class="selling__text-desc">
+                                    <i class="selling__text-icon far fa-check-circle"></i>
+                                    The best for every budget
+                                </h5>
+                                <span class="selling__text-body">Find high-quality services at every price point. No hourly rates, just project-based pricing.</span>
+                            </li>
+                            <li class="selling__text-item">
+                                <h5 class="selling__text-desc">
+                                    <i class="selling__text-icon far fa-check-circle"></i>
+                                    Quality work done quickly
+                                </h5>
+                                <span class="selling__text-body">
+                                    Find the right freelancer to begin working on your project within minutes.
+                                </span>
+                            </li>
+                            <li class="selling__text-item">
+                                <h5 class="selling__text-desc">
+                                    <i class="selling__text-icon far fa-check-circle"></i>
+                                    Protected payments, every time
+                                </h5>
+                                <span class="selling__text-body">Always know what you'll pay upfront. Your payment isn't released until you approve the work.</span>
+                            </li>
+                            <li class="selling__text-item">
+                                <h5 class="selling__text-desc">
+                                    <i class="selling__text-icon far fa-check-circle"></i>
+                                    24/7 support
+                                </h5>
+                                <span class="selling__text-body">Questions? Our round-the-clock support team is available to help anytime, anywhere.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div   onclick="displayVideo()" class="selling__video js-video col l-7 m-12 c-12">
+                        <img src="./assest/img/video1.png" alt="" class="selling__video-img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Explore the marketplace -->
+        <div class="category grid wide">
+            <div class="category__wrap">
+                <h2 class="category__heading">Explore the marketplace</h2>
+                <ul class="category__list row">
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_design.svg" alt="" class="category__img">
+                            <span class="category__text">Graphics & Design</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_maketing.svg" alt="" class="category__img">
+                            <span class="category__text">Digital Marketing</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_writing.svg" alt="" class="category__img">
+                            <span class="category__text">Writing & Translation</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_video.svg" alt="" class="category__img">
+                            <span class="category__text">Video & Animation</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_audio.svg" alt="" class="category__img">
+                            <span class="category__text">Music & Audio</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_tech.svg" alt="" class="category__img">
+                            <span class="category__text">Programming & Tech</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_business.svg" alt="" class="category__img">
+                            <span class="category__text">Business</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_lifestyle.svg" alt="" class="category__img">
+                            <span class="category__text">Lifestyle</span>
+                        </a>
+                    </li>
+                    <li class="category__item col l-2-4 m-4 c-6">
+                        <a href="" class="category__link">
+                            <img src="./assest/img/Explore_data.svg" alt="" class="category__img">
+                            <span class="category__text">Data</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fiverr guides -->
+        <div class="fiverr-guides grid wide">
+            <div class="fiverr-guides__header">
+                <h2 class="fiverr-guides__heading">
+                    Fiverr guides
+                </h2>
+                <a href="" class="fiverr-guides__see-more ">See More ></a>
+            </div>
+
+            <div class="fiverr-guides__wrap row">
+                <div class="fiverr-guides__item col l-4 m-6 c-12">
+                    <img src="./assest/img/guide-start-1.png" alt="" class="fiverr-guides__img">
+                    <a href="" class="fiverr-guides__link-desc">
+                        <h6>Start an online business and work from home</h6>
+                    </a>
+                    <a href="" class="fiverr-guides__link-text">
+                        <p>A complete guide to starting a small business online</p>
+                    </a>
+                </div>
+                <div class="fiverr-guides__item col l-4 m-6 c-12">
+                    <img src="./assest/img/guide-digital-1.png" alt="" class="fiverr-guides__img">
+                    <a href="" class="fiverr-guides__link-desc">
+                        <h6>Digital marketing made easy</h6>
+                    </a>
+                    <a href="" class="fiverr-guides__link-text">
+                        <p>A practical guide to understand what is digital marketing</p>
+                    </a>
+                </div>
+                <div class="fiverr-guides__item col l-4 m-6 c-12">
+                    <img src="./assest/img/guide-create-1.png" alt="" class="fiverr-guides__img">
+                    <a href="" class="fiverr-guides__link-desc">
+                        <h6>Create a logo for your business</h6>
+                    </a>
+                    <a href="" class="fiverr-guides__link-text">
+                        <p>A step-by-step guide to create a memorable business logo</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Fiverr logo maker -->
+        <div class="logo-maker grid wide">
+            <div class="logo-maker__wrap ">
+                <div class="logo-maker__content">
+                    <h4 class="logo-maker__heading">Fiverr logo maker</h4>
+                    <h2 class="logo-maker__desc">
+                        Make an incredible logo in minutes
+                    </h2>
+                    <p class="logo-maker__text">Pre-designed by top talent. Just add your touch.</p>
+                    <button class="logo-maker__btn btn">Try Fiverr Logo Maker</button>
+                </div>
+                <div class="logo-maker__img hide-on-tablet-mobile ">
+                    <img src="./assest/img/img_incredible_logo.png" alt="">
+                </div>
+                <div class="logo-maker__img hide-on-pc">
+                    <img src="./assest/img/logo-maker-banner-tablet-852-2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer__wrap grid wide">
+                <div class="footer__container row">
+                    <div class="footer__content col l-2-4 m-4 c-6">
+                        <h5 class="footer__content-desc">Categories</h5>
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Graphics & Design</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Digital Marketing</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Writing & Translation</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Video & Animation</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Music & Audio</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Programming & Tech</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content col l-2-4 m-4 c-6">
+                        <h5 class="footer__content-desc">About</h5>
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Careers</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Press & New</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Partnerships</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Privacy Policy</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content col l-2-4 m-4 c-6">
+                        <h5 class="footer__content-desc">Support</h5>
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Help & Support</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Trust & Safety</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Selling on Fiverr</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Buying on Fiverr</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content col l-2-4 m-6 c-6">
+                        <h5 class="footer__content-desc">Community</h5>
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Events</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Blog</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Forum</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Community Standards</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Podcast</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Affiliates</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Invite a Friend</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content col l-2-4 m-6 c-12">
+                        <h5 class="footer__content-desc">Move From Fiverr</h5>
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Fiverr Business</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Fiverr Pro</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Fiverr Studios</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Fiverr Logo Maker</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Fiverr Guides</a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a href="" class="footer__content-link">Get Inspired</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-left">
+                        <a href="" class="">
+                            <img src="./assest/img/logo_footer_bottom.png" alt="" class="footer__bottom-left-img">
+                        </a>
+                        <p class="footer__bottom-left-text">© Fiverr International Ltd. 2021</p>
+                    </div>
+                    <div class="footer__bottom-right">
+                        <ul class="footer__bottom-right-list">
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="footer__bottom-right-icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="footer__bottom-right-icon fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="footer__bottom-right-icon fab fa-invision"></i>
+                                </a>
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="footer__bottom-right-icon fab fa-pinterest"></i>
+                                </a>
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="footer__bottom-right-icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <section class="footer__bottom-right-section">
+                            <button class="btn-bottom">
+                                <i class="section-icon fas fa-globe"></i>
+                                English
+                            </button>
+                            <button class="btn-bottom">
+                                US$ USD
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<!-- Modal Sign In -->
+    <div class="modal__signIn js-modal__signIn">
+        <div class="modal__container js-modal-container-signIn">
+            <div class="menu-close js-close-SignIn">
+                <i class="fas fa-times menu-close__icon"></i>
+            </div>
+            <h2 class="modal__header">
+                Sign In to Fiverr
+            </h2>
+            <div class="modal__container-btn">
+                <button class="modal__btn modal__fb">
+                    <i class="fab fa-facebook modal__icon"></i>
+                    Continue with Facebook
+                </button>
+                <button class="modal__btn modal__gg">
+                    <i class="fab fa-google modal__icon"></i>
+                    Continue with Google
+                </button>
+                <button class="modal__btn modal__apple">
+                    <i class="fab fa-apple modal__icon"></i>
+                    Continue with Apple
+                </button>
+                <div class="modal__seperato">
+                    <span>OR</span>
+                </div>
+            </div>
+            
+            <input type="text" placeholder="Email / Username" required class="modal__input">
+            <input type="text" placeholder="Password" required class="modal__input">
+
+            <button class="modal__btn-continue btn">Continue</button>
+            <div class="foggot-passwword">
+                <div class="">
+                    <input type="checkbox">
+                    <span class="foggot-passwword-body">Remember me</span>
+                </div>
+                <a href="" class="foggot-passwword-link">Foggot Password?</a>
+            </div>  
+            <div class="modal__footer">
+                <p class="modal__footer-body">
+                    Not a member yet?
+                </p>
+                <a href="" class="modal__footer-link">Join now</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal Join -->
+    <div class="modal__join js-modal__join">
+        <div class="modal__container js-modal-container-join">
+            <div class="menu-close js-close">
+                <i class="fas fa-times menu-close__icon"></i>
+            </div>
+            <h2 class="modal__header">
+                Join Fiverr
+            </h2>
+            <div class="modal__container-btn">
+                <button class="modal__btn modal__fb">
+                    <i class="fab fa-facebook modal__icon"></i>
+                    Continue with Facebook
+                </button>
+                <button class="modal__btn modal__gg">
+                    <i class="fab fa-google modal__icon"></i>
+                    Continue with Google
+                </button>
+                <button class="modal__btn modal__apple">
+                    <i class="fab fa-apple modal__icon"></i>
+                    Continue with Apple
+                </button>
+                <div class="modal__seperato">
+                    <span>OR</span>
+                </div>
+            </div>
+            
+            <input type="Email" placeholder="Enter your email"  required class="modal__input">
+
+            <button class="modal__btn-continue btn">Continue</button>
+            <div class="foggot-passwword">
+                <p class="foggot-passwword-join">
+                    By joining I agree to receive emails from Fiverr.
+                </p>
+            </div>  
+            <div class="modal__footer">
+                <p class="modal__footer-body">
+                    Already a member?
+                </p>
+                <a href="" class="modal__footer-link">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal video -->
+    <div class="video">
+        <div  class="modal__video js-modal__video">
+            <div class="modal__video-body">
+                <video class="modal__video-body-orca-video js-modal__video-body" controls poster preload="metadata"  crossorigin="anonymous" draggable="true">
+                    <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
